@@ -22,6 +22,7 @@ var CourseModel = /** @class */ (function () {
     CourseModel.prototype.createModel = function () {
         this.model = mongooseConnection.model("Courses", this.schema);
     };
+    //see all records in a collection
     CourseModel.prototype.retrieveAllCourses = function (response) {
         var query = this.model.find({});
         query.exec(function (err, itemArray) {

@@ -31,6 +31,7 @@ class CourseModel {
         this.model = mongooseConnection.model<ICourseModel>("Courses", this.schema);
     }
 
+    //see all records in a collection
     public retrieveAllCourses(response:any): any {
         var query = this.model.find({});
         query.exec( (err, itemArray) => {

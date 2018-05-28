@@ -20,6 +20,7 @@ class AssessmentModel {
                 courseId: Number,
                 assessments: [ {
                 description: String,
+                options: [String],
                 assessmentId: Number,
                 shared: String,
                 status: String

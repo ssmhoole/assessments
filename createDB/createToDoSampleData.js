@@ -14,7 +14,6 @@ usersCollection.insert(
 )
 
 
-
 db = db.getSiblingDB('toDoSample')
 db.createCollection('courses')
 coursesCollection = db.getCollection("courses")
@@ -49,6 +48,8 @@ coursesCollection.insert(
 	  owner: "samM"
 }
 )
+
+
 db.createCollection('assessments')
 assessmentsCollection = db.getCollection("assessments")
 assessmentsCollection.remove({})
@@ -57,33 +58,17 @@ assessmentsCollection.insert(
 	courseId : 1,
 	assessments : [
 	 {
-	  description: "Translate 1",
+	  description: "Are there any questions?",
+	  options: ["Hay preguntas?","Hoy preguntas?","Hay preguntos?","Hoy preguntos?"],
 	  assessmentId: 1,
 	  shared: "N",
 	  status: "I"
 	 },
 	 {
-	  description: "Translate 2",
+	  description: "Slower Please.",
+	  options: ["Mos despacio, por favor","Mas despiacio, por favor","Mos despacio, por favor"],
 	  assessmentId: 2,
 	  shared: "N",
-	  status: "I"
-	 },
-	 {
-	  description: "Translate 3",
-	  assessmentId: 3,
-	  shared: "N",
-	  status: "I"
-	 },
-	 {
-	  description: "Translate 4",
-	  assessmentId: 4,
-	  shared: "N",
-	  status: "I"
-	 },
-	 {
-	  description: "Translate 4",
-	  assessmentId: 5,
-	  shared: "wife",
 	  status: "I"
 	 }
 	]
@@ -95,31 +80,15 @@ assessmentsCollection.insert(
 	assessments : [
 	 {
 	  description: "Translate 11",
+	  options: ["Hay preguntas?","Hoy preguntas?","Hay preguntos?","Hoy preguntos?"],
 	  assessmentId: 1,
 	  shared: "N",
 	  status: "I"
 	 },
 	 {
 	  description: "Translate 22",
+	  options: ["Mos despacio, por favor","Mas despiacio, por favor","Mos despacio, por favor"],
 	  assessmentId: 2,
-	  shared: "N",
-	  status: "I"
-	 },
-	 {
-	  description: "Translate 33",
-	  assessmentId: 3,
-	  shared: "N",
-	  status: "I"
-	 },
-	 {
-	  description: "Translate 44",
-	  assessmentId: 4,
-	  shared: "N",
-	  status: "I"
-	 },
-	 {
-	  description: "Translate 55",
-	  assessmentId: 5,
 	  shared: "N",
 	  status: "I"
 	 }
@@ -132,34 +101,19 @@ assessmentsCollection.insert(
 	assessments : [
 	 {
 	  description: "Translate 111",
+	  options: ["Hay preguntas?","Hoy preguntas?","Hay preguntos?","Hoy preguntos?"],
 	  assessmentId: 1,
 	  shared: "N",
 	  status: "I"
 	 },
 	 {
 	  description: "Translate 222",
+	  options: ["Mos despacio, por favor","Mas despiacio, por favor","Mos despacio, por favor"],
+
 	  assessmentId: 2,
 	  shared: "N",
 	  status: "I"
 	 },
-	 {
-	  description: "Translate 333",
-	  assessmentId: 3,
-	  shared: "N",
-	  status: "I"
-	 },
-	 {
-	  description: "Translate 444",
-	  assessmentId: 4,
-	  shared: "N",
-	  status: "I"
-	 },
-	 {
-	  description: "Translate 555",
-	  assessmentId: 5,
-	  shared: "N",
-	  status: "I"
-	 }
 	]	
 }
 )

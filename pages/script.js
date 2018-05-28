@@ -96,6 +96,7 @@ function populateCourseItems(elementId, course) {
 	for (var i = 0; i < courseItems.length; i++) {
 		newElement += "<tr>";
 		newElement += "<td>" + courseItems[i].description + "</td>";
+		newElement += "<td>" + courseItems[i].options[0] + "</td>";
 		newElement += "<td><span class=\"badge\">" + courseItems[i].shared + "</span></td>";
 		newElement += "<td>";
 		newElement += "<div class=\"input-group\">";
